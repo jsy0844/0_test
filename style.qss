@@ -1,0 +1,156 @@
+* {
+    background:#ffffff;
+    /*color: rgb(41, 48, 51);*/
+    font-family: AvenirNext LT Pro Regular;
+    font-size: 9pt;
+}
+
+QLabel {
+    color: rgb(41, 48, 51);
+}
+
+QLabel:disabled {
+    color: rgba(41, 48, 51, 0.3);
+}
+
+QLabel[myclass = "title"] {
+    color: rgb(255, 255, 255);
+    background-color: rgb(64, 74, 78);
+    font-size: 20pt;
+    padding: 15px;
+
+}
+/* QTextBrowser -----------------------------------------------------------
+
+https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qabstractscrollarea
+
+--------------------------------------------------------------------------- */
+QTextBrowser {
+    border: 1px solid rgb(200, 212, 218);
+    color: rgb(41, 48, 51);
+    border-radius: 4px;
+}
+
+QTextBrowser:disabled {
+    border: 1px solid rgb(200, 212, 218);
+    color: rgba(41, 48, 51, 0.3);
+    border-radius: 4px;
+}
+
+QTextBrowser:hover, QTextBrowser:selected, QTextBrowser:pressed {
+    border: 1px solid rgb(0, 177, 244);
+}
+
+/* QPushButton */
+QPushButton {
+    color: rgb(41, 48, 51);
+    font-size: 8pt;
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: -0.38px;
+
+    background: rgb(255, 255, 255);
+    border-radius: 4px;
+    border: 1px solid rgb(110, 130, 139);
+    width: 120px;
+    height: 30px;
+}
+
+QPushButton[myclass="primary"] {
+    font-size: 9pt;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 177, 244);
+    border: 1px solid rgb(231, 237, 241);
+    border-radius: 4px;
+    width: 120px;
+    height: 45px;
+}
+
+QPushButton:disabled, QPushButton[myclass="primary"]:disabled {
+    border: 1px solid rgb(200, 212, 218);
+    color: rgb(200, 212, 218);
+    background: rgb(255, 255, 255);
+}
+
+QPushButton:pressed, QPushButton[myclass="primary"]:pressed {
+    background: rgb(6, 141, 202);
+    border: 1px solid rgb(231, 237, 241);
+    color: rgb(255, 255, 255);
+}
+
+QPushButton:hover, QPushButton[myclass="primary"]:hover {
+    background: rgb(0, 163, 225);
+    border: 1px solid rgb(231, 237, 241);
+    color: rgb(255, 255, 255);
+}
+
+QPushButton:focus, QPushButton[myclass="primary"]:focus {
+    border: 1px solid rgb(0, 177, 244);
+    color: rgb(0, 177, 244);
+    background: rgb(255, 255, 255);
+}
+
+QPushButton[myclass="warning"] {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(179, 56, 45);
+    color: rgb(193, 16, 0);
+}
+
+
+/* QLineEdit*/
+QLineEdit {
+    font-size: 7pt;
+    letter-spacing: -0.35px;
+    background: rgb(231, 237, 241);
+    border: 1px solid rgb(200, 212, 218);
+    border-radius: 4px;
+    color: rgb(41, 48, 51);
+}
+
+QLineEdit:disabled {
+    background: rgba(231, 237, 241, 0.3);
+    border: 1px solid rgba(200, 212, 218, 0.3);
+    border-radius: 4px;
+    color: rgba(41, 48, 51, 0.3);
+}
+
+QLineEdit:hover {
+    background: rgb(248, 250, 251);
+    border: 1px solid rgb(200, 212, 218);
+    border-radius: 4px;
+}
+
+QLineEdit:focus {
+    background: rgb(231, 237, 241);
+    border: 1px solid rgb(0, 177, 244);
+    border-radius: 4px;
+}
+
+QLineEdit:selected {
+    background: rgb(200, 212, 218);
+    border: 1px solid rgb(200, 212, 218);
+    border-radius: 4px;
+    color: rgb(41, 48, 51);
+}
+QLineEdit[myclass="warning"] {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(179, 56, 45);
+    border-radius: 4px;
+    color: rgb(179, 56, 45);
+}
+
+/* 直线 4 横线， 5 竖线 */
+QFrame[frameShape="4"] {
+    height: 2px;
+    border: none;
+    /* background-color: #rgb(231, 237, 241);*/
+    color: rgb(231, 237, 241);
+}
+
+QFrame[frameShape="5"] {
+    height: 2px;
+    border: none;
+    /* background-color: #rgb(231, 237, 241);*/
+    color: rgb(231, 237, 241);
+}
+
